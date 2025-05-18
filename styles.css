@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-Italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url("./assets/fonts/Nunito.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  grid-row: 1 / 4;
+  color: white;
+  background-color: #1892d3;
+  padding: 20px;
+  display: grid;
+  gap: 48px;
+  align-content: start;
+}
+
+.header, .profile, .content {
+  grid-column: 2 / 3;
+}
+
+.logo {
+  padding: 5px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar svg {
+  fill: white;
+  width: 1.4em;
+}
+
+.logo svg {
+  width: 1.5em;
+}
+
+.nav > ul, 
+.utility > ul {
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: grid;
+}
+
+.sidebar ul li {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 18px;
+  padding: 12px;
+}
+
+.sidebar ul li:hover {
+  background-color: #1584bf;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar a:visited {
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  padding: 20px;
+  gap: 60px;
+}
+
+.search > form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+}
+
+.search svg {
+  width: 2rem;
+}
+
+.content {
+  background-color: #e2e8ef;
+}
