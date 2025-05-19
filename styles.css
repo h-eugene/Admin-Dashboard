@@ -159,7 +159,7 @@ header .user-stuff svg {
 
 .user-icon {
   aspect-ratio: 1;
-  height: 3rem;
+  height: 3.5rem;
   background-color: #e2e8ef;
   border-radius: 50%;
   background: no-repeat center/cover url(./assets/images/user-icon.jpg);
@@ -299,7 +299,7 @@ header .user-stuff svg {
 .activity {
   display: grid;
   align-content: start;
-  gap: 36px;
+  gap: 34px;
 }
 
 .news {
@@ -317,7 +317,7 @@ header .user-stuff svg {
 }
 
 .news p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: #636363;
   margin-top: 2px;
@@ -325,6 +325,10 @@ header .user-stuff svg {
 
 .news hr {
   margin: 16px 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #a9a9a9;
 }
 
 .profiles {
@@ -335,7 +339,7 @@ header .user-stuff svg {
   padding: 20px;
   box-shadow: 4px 8px 8px -4px rgb(210, 210, 210);
   display: grid;
-  gap: 18px;
+  gap: 28px;
 }
 
 .profiles > div {
